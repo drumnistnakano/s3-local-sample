@@ -1,0 +1,13 @@
+version: latest
+
+services:
+  minio:
+    image: minio/minio:latest
+    container_name: test-minio
+    environment:
+      - MINIO_ACCESS_KEY=ACCESS_KEY_DUMMY
+      - MINIO_SECRET_KEY=SECRET_KEY_DUMMY
+    command: server --console-address ":9001" /data
+    ports:
+      - 9000:9000
+      - 9001:9001

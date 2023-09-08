@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.408.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "esbuild": "^0.19.2",
+    "esbuild-register": "^3.4.2"
+  },
+  "scripts": {
+    "start": "node -r esbuild-register"
+  }
+}
